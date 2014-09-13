@@ -5,7 +5,7 @@ module Data.Algorithm.Munkres.Simple (
     Problem, 
     problem, 
     -- * Solutions
-    Solution, associatedA, associatedB, associationList)
+    Solution, solve, associatedA, associatedB, associationList)
     where
 
 import qualified Data.Set as S (Set, size, toAscList)
