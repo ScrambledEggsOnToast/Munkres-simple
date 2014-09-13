@@ -1,7 +1,7 @@
 name:                Munkres-simple
 version:             0.1.0.0
 synopsis:            Simple and typesafe layer over the Munkres package.
--- description:         
+description:         Simple and typesafe layer over the Munkres package.
 license:             BSD3
 license-file:        LICENSE
 author:              Josh Kirklin

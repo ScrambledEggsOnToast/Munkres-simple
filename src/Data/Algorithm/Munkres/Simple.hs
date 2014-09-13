@@ -57,12 +57,12 @@ solve p = Solution solution cost
     
     assocs = [((m,n), weightFunction p a b) | (m,a) <- as, (n, b) <- bs]
 
--- | In a solution of type @Solution a b@, finds the a that a given b is paired with. Returns nothing if the given b was not a part of the initial problem.
+-- | In a solution of type @Solution a b@, finds the @a@ that a given @b@ is paired with. Returns @Nothing@ if the given @b@ was not a part of the initial problem.
 
 associatedA :: (Ord a, Ord b) => Solution a b -> b -> Maybe a
 associatedA s b = B.lookupR b . solutionBimap $ s
 
--- | In a solution of type @Solution a b@, finds the b that a given a is paired with. Returns nothing if the given a was not a part of the initial problem.
+-- | In a solution of type @Solution a b@, finds the @b@ that a given @a@ is paired with. Returns @Nothing@ if the given @a@ was not a part of the initial problem.
 
 associatedB :: (Ord a, Ord b) => Solution a b -> a -> Maybe b
 associatedB s a = B.lookup a . solutionBimap $ s
